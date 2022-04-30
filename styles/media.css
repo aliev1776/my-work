@@ -1,0 +1,115 @@
+@media (prefers-color-scheme: dark) {
+
+    /* agar windows temasi qora bolsa shu media ishga tushadi */
+    :root {
+        --primary-background: #151437;
+        --secondary-text-color: #fff;
+    }
+
+    .logo::before {
+        content: url(../images/logo-white.svg);
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(255, 255, 255, .55);
+        border-color: rgba(255, 255, 255, .1)
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    }
+
+}
+
+@media (max-width:1399.95px) {
+    .intro__text {
+        padding: 0;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item>img {
+        width: 100%;
+    }
+
+    .intro__slider {
+        margin: 25px auto 0;
+    }
+}
+
+@media (max-width:1199.95px) {
+
+    .about__bg,
+    .about__element {
+        display: none;
+    }
+}
+
+@media (max-width:991.95px) {
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .header__link {
+        margin-left: 0;
+    }
+
+    .about__image {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .about__left {
+        left: 115px;
+    }
+
+    .accordion {
+        margin: 30px 0;
+    }
+
+    .caap__element {
+        top: -25px;
+    }
+
+    .row>* {
+        flex-shrink: none;
+    }
+}
+
+@media (max-width:767.95px) {
+    .intro__element4 {
+        display: none;
+    }
+
+    .intro__text-title {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .about__txt {
+        text-align: center;
+    }
+
+    .about__txt-title {
+        font-size: 30px;
+    }
+
+    .about__txt-sub {
+        font-size: 14px;
+    }
+    .about__txt-btn {
+        margin-left: 0;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:575.95px) {
+    .intro__brand_item {
+        width: 50%;
+    }
+
+    .intro__brand {
+        flex-wrap: wrap;
+    }
+}
